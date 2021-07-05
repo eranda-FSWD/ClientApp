@@ -4,7 +4,7 @@ import { Menu } from "semantic-ui-react";
 import "./NavMenu.css";
 
 export class NavMenu extends Component {
-  state = { activeItem: "Customers" };
+  state = { activeItem: null };
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 
@@ -13,7 +13,15 @@ export class NavMenu extends Component {
 
     return (
       <Menu size="huge" inverted>
-        <Menu.Item header>React</Menu.Item>
+        <Menu.Item
+          header
+          name="Home"
+          as={NavLink}
+          to="/"
+          onClick={this.handleItemClick}
+        >
+          React
+        </Menu.Item>
         <Menu.Item
           name="Customers"
           as={NavLink}
@@ -22,10 +30,10 @@ export class NavMenu extends Component {
           onClick={this.handleItemClick}
         />
         <Menu.Item
-          name="Produsts"
+          name="Products"
           as={NavLink}
           to="/Product"
-          active={activeItem === "Produsts"}
+          active={activeItem === "Products"}
           onClick={this.handleItemClick}
         />
         <Menu.Item

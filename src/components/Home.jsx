@@ -1,26 +1,62 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import "semantic-ui-css/semantic.min.css";
+import { Container } from "semantic-ui-react";
 
 export class Home extends Component {
   static displayName = Home.name;
 
-  render () {
+  render() {
     return (
-      <div>
-        <h1>Hello, world!</h1>
-        <p>Welcome to your new single-page application, built with:</p>
+      <Container>
+        <h1>Talent Project</h1>
+        <p>Welcome to onbording task Talent Project</p>
         <ul>
-          <li><a href='https://get.asp.net/'>ASP.NET Core</a> and <a href='https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx'>C#</a> for cross-platform server-side code</li>
-          <li><a href='https://facebook.github.io/react/'>React</a> for client-side code</li>
-          <li><a href='http://getbootstrap.com/'>Bootstrap</a> for layout and styling</li>
+          <li>Customers: Add, Update, Delete</li>
+          <li>Products: Add, Update, Delete</li>
+          <li>Stores: Add, Update, Delete</li>
+          <li>Sales: Add, Update, Delete</li>
         </ul>
-        <p>To help you get started, we have also set up:</p>
+        <p>
+          The Navigationbar on the top will take you to the relavant page by
+          clicking the on the name.
+        </p>
         <ul>
-          <li><strong>Client-side navigation</strong>. For example, click <em>Counter</em> then <em>Back</em> to return here.</li>
-          <li><strong>Development server integration</strong>. In development mode, the development server from <code>create-react-app</code> runs in the background automatically, so your client-side resources are dynamically built on demand and the page refreshes when you modify any file.</li>
-          <li><strong>Efficient production builds</strong>. In production mode, development-time features are disabled, and your <code>dotnet publish</code> configuration produces minified, efficiently bundled JavaScript files.</li>
+          <li>
+            <strong>Customer</strong>. For example, click <em>Add Customer</em>{" "}
+            then <em>Fill All the fields</em> click the Create button. Moving
+            on, click <em>Edit</em> then <em>Change All the fields</em> click
+            the Edit button. Finally, click <em>Delete</em> then{" "}
+            <em>Conform the deleting customer</em> click the Delete button.
+          </li>
+          <li>
+            <strong>Product</strong>. For example, click <em>Add Product</em>{" "}
+            then <em>Fill All the fields</em> click the Create button. Moving
+            on, click <em>Edit</em> then <em>Change All the fields</em> click
+            the Edit button. Finally, click <em>Delete</em> then{" "}
+            <em>Conform the deleting Product</em> click the Delete button.
+          </li>
+          <li>
+            <strong>Stores</strong>. For example, click <em>Add Stores</em> then{" "}
+            <em>Fill All the fields</em> click the Create button. Moving on,
+            click <em>Edit</em> then <em>Change All the fields</em> click the
+            Edit button. Finally, click <em>Delete</em> then{" "}
+            <em>Conform the deleting Stores</em> click the Delete button.
+          </li>
+          <li>
+            <strong>Sales</strong>. For example, click <em>Add Sales</em> then{" "}
+            <em>Fill All the fields</em> click the Create button. Moving on,
+            click <em>Edit</em> then <em>Change All the fields</em> click the
+            Edit button. Finally, click <em>Delete</em> then{" "}
+            <em>Conform the deleting Sales</em> click the Delete button.
+          </li>
         </ul>
-        <p>The <code>ClientApp</code> subdirectory is a standard React application based on the <code>create-react-app</code> template. If you open a command prompt in that directory, you can run <code>npm</code> commands such as <code>npm test</code> or <code>npm install</code>.</p>
-      </div>
+        <p>
+          The <code>Talant</code> subdirectory is a standard React application
+          based on the <code>create-react-app</code> template. If you open a
+          command prompt in that directory, you can run <code>npm</code>{" "}
+          commands such as <code>npm test</code> or <code>npm install</code>.
+        </p>
+      </Container>
     );
   }
 }
