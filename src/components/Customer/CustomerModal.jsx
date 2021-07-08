@@ -19,7 +19,13 @@ class CustomerModal extends Component {
         this.props.toggleCustomerModal(false);
       })
       .catch((err) => {
+        alert(
+          "This Customer " +
+            this.state.customer.Name +
+            " have Sales and can not e Deleted."
+        );
         console.log(err);
+        this.props.toggleCustomerModal(false);
       });
   };
 
