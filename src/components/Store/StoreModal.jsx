@@ -20,6 +20,8 @@ class StoreModal extends Component {
         this.props.toggleStoreModal(false);
       })
       .catch((err) => {
+        alert("This Store is used to make Sales and it can NOT be Deleted.");
+        this.props.toggleStoreModal(false);
         console.log(err);
       });
   };

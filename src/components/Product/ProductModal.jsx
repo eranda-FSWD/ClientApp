@@ -19,6 +19,8 @@ class ProductModal extends Component {
         this.props.toggleProductModal(false);
       })
       .catch((err) => {
+        alert("This Product is in Sales and can not be Deleted.");
+        this.props.toggleProductModal(false);
         console.log(err);
       });
   };

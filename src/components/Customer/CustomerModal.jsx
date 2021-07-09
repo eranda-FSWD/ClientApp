@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import alert from "alert";
 import { Button, Modal, Form, Icon } from "semantic-ui-react";
 
 class CustomerModal extends Component {
@@ -19,13 +20,9 @@ class CustomerModal extends Component {
         this.props.toggleCustomerModal(false);
       })
       .catch((err) => {
-        alert(
-          "This Customer " +
-            this.state.customer.Name +
-            " have Sales and can not e Deleted."
-        );
-        console.log(err);
+        alert("This Customer have Sales and can not be Deleted.");
         this.props.toggleCustomerModal(false);
+        console.log(err);
       });
   };
 
